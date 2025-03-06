@@ -1,0 +1,344 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header nav {
+    background-color: #1c1c1c;
+    padding: 15px 0;
+}
+
+header nav .logo h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://images.pexels.com/photos/277253/pexels-photo-277253.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn-main {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.hero .btn-main:hover {
+    background-color: #45a049;
+}
+
+/* Features Section */
+.features {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #f9f9f9;
+    padding: 30px;
+    width: 28%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card i {
+    font-size: 3rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 1.1rem;
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 60px 0;
+    background-color: #f4f7f6;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+}
+
+.step {
+    width: 30%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.step h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.step p {
+    font-size: 1.1rem;
+}
+
+/* Pricing Section */
+.pricing {
+    padding: 60px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 30%;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.card .btn-main {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.card .btn-main:hover {
+    background-color: #45a049;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 0;
+    background-color: #f4f7f6;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    padding: 12px 30px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.contact form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    /* Header Navigation */
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    header nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        color: #fff;
+        font-size: 2rem;
+        margin-right: 20px;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .hero .btn-main {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+
+    /* Feature Cards */
+    .feature-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    /* How It Works Section */
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    /* Pricing Section */
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    /* Contact Section */
+    .contact form input,
+    .contact form textarea {
+        width: 90%;
+    }
+
+    .contact form button {
+        width: 90%;
+    }
+}
